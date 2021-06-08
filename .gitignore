@@ -1,0 +1,8 @@
+# 忽略所有文件
+*
+# 不忽略目录
+!*/
+# 不忽略文件.gitignore和.py 以及.txt
+!.gitignore
+!*.py
+!*.txt
