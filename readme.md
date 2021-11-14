@@ -11,7 +11,7 @@
     - 在使用时,可能会遇到 `AttributeError("module 'fitz' has no attribute 'open'") `,
         - 参考: https://github.com/pymupdf/PyMuPDF/issues/660
 
-### 环境的快读搭建
+### 环境的快速搭建
 
 ```python
 # 环境的快读搭建
@@ -31,7 +31,7 @@ pip3 install  -i https://pypi.mirrors.ustc.edu.cn/simple -U pymupdf
 # conda activate mypdftoc 
 
 # 在命令行终端,输入如下命令, 
-python3 pdftotoc.py
+python3 pdfsettoc.py
 ```
 
 
