@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
 
 #%% 导入必要的库
 import sys, fitz, re
@@ -250,6 +255,6 @@ else:
 toc_list = toc_df.values.tolist() 
 
 #### 输出文件
-doc.setToC(toc_list)
+doc.set_toc(toc_list)
 doc.save(pdf_file_output)
 print('输出含目录的文件名：' + pdf_file_output)

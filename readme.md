@@ -78,5 +78,10 @@ python3 pdfsettoc.py
 
 ### 实例:
 
-![image-20211114233327064](https://i0.hdslb.com/bfs/album/cf5cfca226cc18aa28cd77e9d184fb2d22f2cf87.png)
+![image-20211114234709819](https://i0.hdslb.com/bfs/album/81aa639a607c2e5d355f8418d4fa89e3087d5aa4.png)
+
+
+![image-20211114234745294](https://i0.hdslb.com/bfs/album/401ae60e6350228d93e44caff0223cd12233026e.png)
+
+![image-20211114234729881](https://i0.hdslb.com/bfs/album/2e99333487e944baa7e074d6770b145ed9458881.png)
 
