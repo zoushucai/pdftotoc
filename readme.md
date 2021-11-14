@@ -8,12 +8,12 @@
     - pdf-toc: https://github.com/HareInWeed/pdf-toc
 - python3环境  + 并且要安装 `fitz` ,它属于pymupdf包, 
     - 安装: `pip3 install pymupdf `
-    - 在使用时,常遇到 `AttributeError("module 'fitz' has no attribute 'open'") `,
+    - 在使用时,可能会遇到 `AttributeError("module 'fitz' has no attribute 'open'") `,
         - 参考: https://github.com/pymupdf/PyMuPDF/issues/660
 
 ### 环境的快读搭建
 
-```
+```python
 # 环境的快读搭建
 conda create -n mypdftoc python=3.9 
 # 然后进入环境,再输入安装软件包命令
@@ -26,7 +26,7 @@ pip3 install  -i https://pypi.mirrors.ustc.edu.cn/simple -U pymupdf
 
 ### 使用: 
 
-```
+```python
 # 前提是进入虚拟环境: 
 # conda activate mypdftoc 
 
@@ -38,7 +38,8 @@ python3 pdftotoc.py
 
 ### 目录文件格式:  
 
-- 缩进有无都行, 如果有缩进(默认),则会在原有章节新增一个层级,如果没有缩进,则按照标题前面的数字和小数点来判断层级
+- 缩进有无都行,按照标题前面的数字和小数点 以及 缩进`\t` 个个数 来判断层级, 选最大的那个
+- 空格不要随便打, 按照空格分割
 - 可以设置偏移量: 如果偏移量是20, 则第21页算第一页,即第三列为1 ,  第20页为-1, 第19页为-2, …., 第一页为-20
 
 ```
@@ -70,9 +71,12 @@ python3 pdftotoc.py
 .......
 ```
 
+###  返回文件
 
+- 原有pdf的目录文件
+- 带目录的pdf文件
 
 ### 实例:
 
-![image-20210608095345958](https://gitee.com/zscqsmy/blogimg/raw/master/uPic/202106080953image-20210608095345958.png)
+![image-20211114233327064](https://i0.hdslb.com/bfs/album/cf5cfca226cc18aa28cd77e9d184fb2d22f2cf87.png)
 
